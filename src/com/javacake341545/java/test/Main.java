@@ -8,11 +8,19 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("input ) ");
-		String cmd = sc.nextLine(); // string 타입의 명령어 // line : 입력된 모든 문자가 입력됨.
-//		String cmd = sc.next(); 띄어쓰기 못씀.
 		
-		System.out.println("command : " + cmd);
+		while(true) { // 무한대 실행
+			System.out.println("input ) ");
+			String cmd = sc.nextLine(); // string 타입의 명령어 // line : 입력된 모든 문자가 입력됨.
+//		String cmd = sc.next(); 띄어쓰기 못씀.
+
+			System.out.println("command : " + cmd);
+			
+			if(cmd.equals("system exit")) {
+				break;
+			}
+		}
+		
 		
 		System.out.println("==program ends==");
 		
